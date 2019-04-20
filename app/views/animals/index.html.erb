@@ -1,0 +1,15 @@
+<h1>Listing articles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+  </tr>
+
+  <% @animals.each do |animal| %>
+    <tr>
+      <td><%= animal.name %></td>
+      <td><%= link_to 'Show', animals_path(animal) %></td>
+    </tr>
+  <% end %>
+</table>
