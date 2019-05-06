@@ -1,4 +1,4 @@
-<h1>Listing articles</h1>
+<h1>Fantastic Beasts Shelter</h1>
 
 <table>
   <tr>
@@ -9,6 +9,10 @@
   <% @animals.each do |animal| %>
     <tr>
       <td><%= animal.name %></td>
+      <td><%= animal.sex %></td>
+      <td><%= animal.breed %></td>
+      <td><%= animal.color %></td>
+      <td><%= animal.likes %></td>
       <td><%= link_to 'Show', animals_path(animal) %></td>
     </tr>
   <% end %>

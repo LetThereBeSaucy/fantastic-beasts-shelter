@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   resources :animals
 
-  root 'welcome#index'
+  root 'animals#index'
 
 end
